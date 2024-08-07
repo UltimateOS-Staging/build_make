@@ -324,8 +324,6 @@ function set_stuff_for_environment()
 {
     set_lunch_paths
     set_sequence_number
-
-    export ANDROID_BUILD_TOP=$(gettop)
 }
 
 function set_sequence_number()
@@ -1186,5 +1184,7 @@ validate_current_shell
 set_global_paths
 source_vendorsetup
 addcompletions
+
+export ANDROID_BUILD_TOP=$(gettop)
 
 . $ANDROID_BUILD_TOP/vendor/ultimate/build/envsetup.sh
