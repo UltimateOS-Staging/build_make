@@ -214,6 +214,19 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   # Dump fingerprints
   script.Print("Target: {}".format(target_info.fingerprint))
 
+  #Build Info
+  script.Print(" ")
+  script.Print(" ")
+  script.Print("   __  ______  _                 __       ____  _____")
+  script.Print("  / / / / / /_(_)___ ___  ____ _/ /____  / __ \/ ___/")
+  script.Print(" / / / / / __/ / __ `__ \/ __ `/ __/ _ \/ / / /\__ \ ")
+  script.Print("/ /_/ / / /_/ / / / / / / /_/ / /_/  __/ /_/ /___/ / ")
+  script.Print("\____/_/\__/_/_/ /_/ /_/\__,_/\__/\___/\____//____/  ")
+  script.Print("================== Made With Love ===================")
+  script.Print("    UltimateOS: Get Ready For Ultimate Experience    ")
+  script.Print("             Presented to you by Ritesh              ")
+  script.Print("=====================================================")
+
   device_specific.FullOTA_InstallBegin()
 
   CopyInstallTools(output_zip)
